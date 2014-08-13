@@ -14,8 +14,6 @@ Write code that you are proud to show. You can decide how much time to spend on 
 
 ### Assignment 1
 
-When in Rome (Score range 100 - 150)
-
 Roman numbers have a unique characteristic. Most numbers can be expressed in more than one way.
 Super inefficient and confusing. As if they were designed by Microsoft.
 
@@ -38,4 +36,4 @@ MXXII
 
 ### Assignment 2
 
-Write a Rails application that that allows to user to convert celcius to fahrenheit. The application should display the two temperatures visually. Make sure the design will allow for adding more functionality later, such as doing other kinds conversions.
+Write a Rails application that allows the user to convert celcius to fahrenheit. The application should display the two temperatures visually. Make sure the design will allow for adding more functionality later, such as doing other kinds conversions.
