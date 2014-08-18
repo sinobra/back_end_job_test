@@ -1,0 +1,368 @@
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 17:40:22 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 1213ms (Views: 1165.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 18:55:37 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 100ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 19:02:06 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 99ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 19:07:09 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 98ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 19:08:02 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 100ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 19:08:48 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 99ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 19:16:58 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 99ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 19:28:08 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 99ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 19:30:21 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 99ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 19:32:03 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 100ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 19:33:02 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 100ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 19:33:35 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 99ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 19:37:56 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 99ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 19:39:14 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 99ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 19:40:15 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 100ms (Views: 51.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 19:41:23 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 115ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 19:43:56 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 100ms (Views: 51.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 19:44:23 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 99ms (Views: 51.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 19:45:37 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 100ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 19:46:28 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 99ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 19:47:14 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 98ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 19:57:34 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 99ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 19:58:17 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 99ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 19:59:34 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 99ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 20:00:47 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 99ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 20:01:45 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 99ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 20:03:52 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 99ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 20:05:43 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 99ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 20:15:07 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 99ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 20:15:42 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 99ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 20:16:02 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 99ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 20:16:41 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 98ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 20:16:53 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 100ms (Views: 51.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2014-08-17 20:17:27 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 99ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+Started GET "/" for 127.0.0.1 at 2014-08-17 20:23:50 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.8ms)
+Completed 200 OK in 101ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-08-17 20:23:50 -0700
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-08-17 20:23:50 -0700
+Started GET "/" for 127.0.0.1 at 2014-08-17 20:25:12 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.8ms)
+Completed 200 OK in 102ms (Views: 53.2ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-08-17 20:25:12 -0700
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-08-17 20:25:12 -0700
+Started GET "/" for 127.0.0.1 at 2014-08-17 20:29:04 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 100ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-08-17 20:29:04 -0700
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-08-17 20:29:04 -0700
+Started GET "/" for 127.0.0.1 at 2014-08-17 20:30:23 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 100ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-08-17 20:30:23 -0700
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-08-17 20:30:23 -0700
+Started GET "/" for 127.0.0.1 at 2014-08-17 20:31:49 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 101ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-08-17 20:31:49 -0700
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-08-17 20:31:49 -0700
+Started GET "/" for 127.0.0.1 at 2014-08-17 20:35:37 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 103ms (Views: 54.2ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-08-17 20:35:37 -0700
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-08-17 20:35:37 -0700
+Started GET "/" for 127.0.0.1 at 2014-08-17 20:38:50 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.8ms)
+Completed 200 OK in 102ms (Views: 53.3ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-08-17 20:38:50 -0700
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-08-17 20:38:50 -0700
+Started GET "/" for 127.0.0.1 at 2014-08-17 20:42:54 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.8ms)
+Completed 200 OK in 103ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-08-17 20:42:55 -0700
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-08-17 20:42:55 -0700
+Started GET "/" for 127.0.0.1 at 2014-08-17 21:02:12 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 100ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-08-17 21:02:12 -0700
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-08-17 21:02:12 -0700
+Started GET "/" for 127.0.0.1 at 2014-08-17 21:04:37 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (13.1ms)
+Completed 200 OK in 101ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-08-17 21:04:37 -0700
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-08-17 21:04:37 -0700
+Started GET "/" for 127.0.0.1 at 2014-08-17 21:06:16 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.8ms)
+Completed 200 OK in 101ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-08-17 21:06:16 -0700
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-08-17 21:06:16 -0700
+Started GET "/" for 127.0.0.1 at 2014-08-17 21:07:22 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.6ms)
+Completed 200 OK in 101ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-08-17 21:07:22 -0700
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-08-17 21:07:22 -0700
+Started GET "/" for 127.0.0.1 at 2014-08-17 21:17:21 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 523ms (Views: 474.2ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-08-17 21:17:21 -0700
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-08-17 21:17:21 -0700
+Started GET "/" for 127.0.0.1 at 2014-08-17 21:19:41 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.6ms)
+Completed 200 OK in 512ms (Views: 464.6ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-08-17 21:19:41 -0700
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-08-17 21:19:41 -0700
+Started GET "/" for 127.0.0.1 at 2014-08-17 21:22:27 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 100ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-08-17 21:22:28 -0700
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-08-17 21:22:28 -0700
+Started GET "/" for 127.0.0.1 at 2014-08-17 21:23:58 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 101ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-08-17 21:23:58 -0700
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-08-17 21:23:58 -0700

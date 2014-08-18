@@ -1,0 +1,34 @@
+// Place all the styles related to the convert controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.wide-button {width: 53px;}
+.narrow-button {width: 40px}
+
+.disp {
+  min-width: 8em;
+  max-width: 8em;
+  background-color: #FEFCCF;
+  border: solid grey 1px;
+}
+.disp, .c-active, .f-active {
+  float: left;
+}
+.c-active, .f-active {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#keypad {
+  margin-top: 5px;
+}
+
+#app_container {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.data-display {
+  margin-bottom: 5px;
+  clear: both;
+}
