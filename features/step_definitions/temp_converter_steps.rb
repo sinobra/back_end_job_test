@@ -4,9 +4,12 @@ When(/^on the page$/) do
 end
 
 Then(/^should see initial page$/) do
-  assert page#farhenheit.text == ''
-  assert page#centigrade.text == ''
-  assert page#f-active.text == '*'
+  t =  find("#upper_display").text
+  assert t == '', "expecting no text in upper display, found #{t.to_s} instead"
+  t = find("#lower_display").text
+  assert t == '', "expecting no text in lower display, found #{t.to_s} instead"
+  t = find(".f-active").text
+  assert t == '*', "expecting * in front of upper display found <#{t.to_s}> instead"
 end
 
 Then /^should see centigrade marked$/ do
@@ -14,7 +17,7 @@ Then /^should see centigrade marked$/ do
 end
 
 When(/^enter (\d+) in Fahrenheit$/) do |arg1|
-  find("#fahrenheit").click
+  find("#upper_display").click
   arg1.split('').each do |n|
     click_button "b#{n}"
     puts "click_button b#{n}"
@@ -23,7 +26,7 @@ When(/^enter (\d+) in Fahrenheit$/) do |arg1|
 end
 
 When(/^enter (\d+) in Centigrade$/) do |arg1|
-  find("#centigrade").click
+  find("#lower_display").click
   puts "switched to centigrade"
   arg1.split('').each do |n|
     click_button "b#{n}"
@@ -32,14 +35,13 @@ When(/^enter (\d+) in Centigrade$/) do |arg1|
 end
 
 Then(/^should see "(.*?)" in Centigrade$/) do |arg1|
- t = find('#centigrade').text
- puts "Text in centigrade =<#{page.find_by_id('centigrade').text}>"
+ t = find('#lower_display').text
  assert t == arg1, "actually saw <#{t}>"
 end
 
 Then(/^should see "(.*?)" in Fahrenheit$/) do |arg1|
   # puts "Text in fahrenheit =<#{page.find_by_id('fahrenheit').text}>"
-  t = find('#fahrenheit').text
+  t = find("#upper_display").text
   assert t == arg1, "actually saw <#{t}>"
 end
 
@@ -50,9 +52,9 @@ When(/^enter c$/) do
 end
 
 Then(/^should see nothing$/) do
-  t = find('#fahrenheit').text
+  t = find("#upper_display").text
   assert t == '',  "expecting '' in Fahrenheit, found #{t} instead"
-  t = find('#centigrade').text
+  t = find("#lower_display").text
   assert t == '', "expecting '' in Centigrade, found #{t} instead"
 end
 
@@ -62,7 +64,7 @@ When(/^enter \-$/) do
 end
 
 When(/^enter minus at the end of a Fahrenheit number$/) do
-  find("#fahrenheit").click
+  find("#upper_display").click
   click_button 'bclear'
   click_button 'b2'
   click_button 'b1'
@@ -71,14 +73,14 @@ When(/^enter minus at the end of a Fahrenheit number$/) do
 end
 
 Then(/^minus is prepended to both Fahrenheit and Centigrade numbers$/) do
-  t = find('#fahrenheit').text
+  t = find("#upper_display").text
   assert t == "-212", "expecting -212 in Fahrenheit, found #{t} instead"
-  t = find('#centigrade').text
+  t = find("#lower_display").text
   assert t == "-135.6", "expecting -135.6 in Centigrade, found #{t} instead"
 end
 
 When(/^enter minus at the end of a Centigrade number$/) do
-  find("#centigrade").click
+  find("#lower_display").click
   click_button 'bclear'
   click_button 'b1'
   click_button 'b3'
@@ -88,14 +90,14 @@ When(/^enter minus at the end of a Centigrade number$/) do
   click_button 'bminus'
 end
 Then(/^minus is prepended to both Centigrade and Fahrenheit numbers$/) do
-  t = find('#fahrenheit').text
+  t = find("#upper_display").text
   assert t == "-212.1", "expecting -212.1 in Fahrenheit, found #{t} instead"
-  t = find('#centigrade').text
+  t = find("#lower_display").text
   assert t == "-135.6", "expecting -135.6 in Centigrade, found #{t} instead"
 end
 
 When(/^enter minus multiple times$/) do
-  find("#centigrade").click
+  find("#lower_display").click
   click_button 'bclear'
   click_button 'bminus'
   click_button 'bminus'
@@ -103,14 +105,14 @@ When(/^enter minus multiple times$/) do
 end
 
 Then(/^only one minus shows$/) do
-  t = find('#fahrenheit').text
+  t = find("#upper_display").text
   assert t == "-", "expecting - in Fahrenheit, found #{t} instead"
-  t = find('#centigrade').text
+  t = find("#lower_display").text
   assert t == "-", "expecting - in Centigrade, found #{t} instead"
 end
 
 When(/^enter decimal\-point multiple times$/) do
-  find("#centigrade").click
+  find("#lower_display").click
   click_button 'bclear'
   click_button 'bdot'
   click_button 'bdot'
@@ -118,52 +120,52 @@ When(/^enter decimal\-point multiple times$/) do
 end
 
 Then(/^only one decimal\-point shows$/) do
-  t = find('#fahrenheit').text
+  t = find("#upper_display").text
   assert t == ".", "expecting '.' in Fahrenheit, found #{t} instead"
-  t = find('#centigrade').text
+  t = find("#lower_display").text
   assert t == ".", "expecting '.' in Centigrade, found #{t} instead"
 end
 
 When(/^enter minus at the beginning of a Fahrenheit field$/) do
-  find("#fahrenheit").click
+  find("#upper_display").click
   click_button 'bclear'
   click_button 'bminus'
 end
 
 Then(/^no calculation is done in the Centigrade field$/) do
-  t = find('#centigrade').text
+  t = find("#lower_display").text
   assert t == "-", "expecting '-' in Centigrade, found #{t} instead"
 end
 
 When(/^enter minus at the beginning of a Centigrade field$/) do
-  find("#centigrade").click
+  find("#lower_display").click
   click_button 'bclear'
   click_button 'bminus'
 end
 
 Then(/^no calculation is done in the Fahrenheit field$/) do
-  t = find('#fahrenheit').text
+  t = find("#upper_display").text
   assert t == "-", "expecting '-' in Fahrenheit, found #{t} instead"
 end
 
 When(/^enter minus\-dot at the beginning of a Fahrenheit field$/) do
-  find("#fahrenheit").click
+  find("#upper_display").click
   click_button 'bclear'
   click_button 'bminus'
   click_button 'bdot'
 end
 
 When(/^enter minus\-dot at the beginning of a Centigrade field$/) do
-  t = find('#centigrade').text
+  t = find("#lower_display").text
   assert t == "-.", "expecting '-.' in Centigrade, found #{t} instead"
 end
 
 Then(/^minus\-dot is copied to the Centigrade field$/) do
-  t = find('#centigrade').text
+  t = find("#lower_display").text
   assert t == "-.", "expecting '-.' in Centigrade, found #{t} instead"
 end
 
 Then(/^minus\-dot is copied to  the Fahrenheit field$/) do
-  t = find('#fahrenheit').text
+  t = find("#upper_display").text
   assert t == "-.", "expecting '-.' in Fahrenheit, found #{t} instead"
 end

@@ -6,79 +6,82 @@ window.CONVERTER = window.CONVERTER || {}
 
 $ ->
   s = window.CONVERTER
-  s.input_focus = 'fahrenheit'
+  s.input_focus = 'upper_display'
   $('.c-active').css('visibility', 'hidden')
 
-  s.clear = ->
-    s.fahrenheit = ""
-    s.centigrade = ""
+  s.selected_conversion = 'temperature
+  '
+  s.temperature = {}
+  temp = s.temperature
+  temp.clear = ->
+    temp.fahrenheit = ""
+    temp.centigrade = ""
     $('.disp').html('&nbsp;')
 
-  s.clear()
 
   # calculate centigrade from fahrenheit
-  s.calc_centigrade = () ->
-    $('#fahrenheit').text(s.fahrenheit)
-    if s.fahrenheit == '.' || s.fahrenheit == '-' || s.fahrenheit == '-.' # avoid NAN
-      $('#centigrade').text(s.fahrenheit)
+  temp.calc_centigrade = () ->
+    $('#upper_display').text(temp.fahrenheit)
+    if temp.fahrenheit == '.' ||temp.fahrenheit == '-' ||temp.fahrenheit == '-.' # avoid NAN
+      $('#lower_display').text(temp.fahrenheit)
     else
-      $('#centigrade').text(( (s.fahrenheit - 32)*5/9 ).toFixed(1) + "")
+      $('#lower_display').text(( (temp.fahrenheit - 32)*5/9 ).toFixed(1) + "")
 
   # calculate fahrenheit from centigrade
-  s.calc_fahrenheit = () ->
-    $('#centigrade').text(s.centigrade)
-    if s.centigrade == '.' || s.centigrade == '-' || s.centigrade == '-.' # avoid NAN
-      $('#fahrenheit').text(s.centigrade)
+  temp.calc_fahrenheit = () ->
+    $('#lower_display').text(temp.centigrade)
+    if temp.centigrade == '.' || temp.centigrade == '-' || temp.centigrade == '-.' # avoid NAN
+      $('#upper_display').text(temp.centigrade)
     else
-      $('#fahrenheit').text( ( (s.centigrade * 9 / 5) + 32).toFixed(1) + "")
+      $('#upper_display').text( ( (temp.centigrade * 9 / 5) + 32).toFixed(1) + "")
 
   # handle minus-sign, don't allow more than one, always position at the front of the string
   # otherwise stick it at the beginning of the string and calculate the other value
-  s.handle_minus = ()->
-    if s.input_focus == 'fahrenheit'
-      if /-/.test(s.fahrenheit)   # bail if we already have one minus sign
+  temp.handle_minus = ()->
+    if s.input_focus == 'upper_display'
+      if /-/.test(temp.fahrenheit)   # bail if we already have one minus sign
         return false
-      s.fahrenheit =  "" + '-' + s.fahrenheit
-      s.calc_centigrade()
+      temp.fahrenheit = "" + '-' + temp.fahrenheit
+      temp.calc_centigrade()
     else
-      if  /-/.test(s.centigrade)   # bail if we already have one minus sign
+      if  /-/.test(temp.centigrade)   # bail if we already have one minus sign
         return false
-      s.centigrade = '-' + s.centigrade
-      s.calc_fahrenheit()
+      temp.centigrade = "" + '-' + temp.centigrade
+      temp.calc_fahrenheit()
     return true
 
   # don't allow more than one decmail-point in the input string
-  s.handle_decimal = () ->
-    if s.input_focus == 'fahrenheit'
-      if /\./.test(s.fahrenheit) # bail if we already have one decimal point
+  temp.handle_decimal = () ->
+    if s.input_focus == 'upper_display'
+      if /\./.test(temp.fahrenheit) # bail if we already have one decimal point
         return false
-      return s.handle_normal('.')
+      return temp.handle_normal('.')
     else
-      if /\./.test(s.centigrade) # bail if we already have one decimal point
+      if /\./.test(temp.centigrade) # bail if we already have one decimal point
         return false
-      return s.handle_normal('.')
+      return temp.handle_normal('.')
 
   # just stick the character on the end of the currently 'focussed'
   # input string and calculate the other value
-  s.handle_normal = (c) ->
-    if s.input_focus == 'fahrenheit'
-      s.fahrenheit += c
-      s.calc_centigrade()
+  temp.handle_normal = (c) ->
+    if s.input_focus == 'upper_display'
+      temp.fahrenheit += c
+      temp.calc_centigrade()
     else
-      s.centigrade += c
-      s.calc_fahrenheit()
+      temp.centigrade += c
+      temp.calc_fahrenheit()
     return true
 
 
 
   # set the input focus for subsequent button clicks
   $('.data-display').click (ev)->
-    if ev.target.id == 'fahrenheit'
-      s.input_focus = 'fahrenheit'
+    if ev.target.id == 'upper_display'
+      s.input_focus = 'upper_display'
       $('.f-active').css('visibility', 'visible')
       $('.c-active').css('visibility', 'hidden')
     else
-      s.input_focus = 'centigrade'
+      s.input_focus = 'lower_display'
       $('.f-active').css('visibility', 'hidden')
       $('.c-active').css('visibility', 'visible')
 
@@ -93,3 +96,14 @@ $ ->
       return s.handle_decimal()
     else
       return s.handle_normal(c)
+
+  s.intialize = ->
+    temp.clear()
+    $('p#notes').html(s.temperature_text.notes)
+    $('#upper_title').html(s.temperature_text.upper_title)
+    $('#lower_title').html(s.temperature_text.lower_title)
+    s.handle_normal = temp.handle_normal
+    s.handle_minus = temp.handle_minus
+    s.handle_decimal = temp.handle_decimal
+    s.clear = temp.clear
+  s.intialize()

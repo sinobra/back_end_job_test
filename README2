@@ -1,0 +1,24 @@
+This is a javascript-based temperature converter
+Just run 'rails server' and type "localhost:3000" in you browser to access the program.
+
+As to the program's extensibility:
+
+All of the javascript code is scoped to window.CONVERTER.
+All of the temperature code is scoped to window.CONVERTER.temperature.
+
+The click-handlers on the buttons call generic handlers.  These handlers are assigned to temperature functions
+in the intialize() function in convert.js.coffee.
+
+If you wanted to add, say a miles-to-kilometers converter you could add the necessary functions in say,
+window.CONVERTER.mileage.
+
+There is space on the left to list other converter labels.  It should be simple to add the labels and re-assign the
+specific converter functions to the the click-handlers when a label is clicked.
+
+There are a set of cucumber tests that I relied on when I generalized the my first (temperature-specific) version of the
+program.
+
+From the rails directory, type: cucumber features/temp_converter.feature.
+
+Fred Obermann
+

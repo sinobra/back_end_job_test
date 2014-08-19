@@ -1,32 +1,45 @@
 
 #app_container
-  %h2 Temperature Converter
-  %p Click on the <i>Fahrenheit</i> or <i>Centigrade</i><br/> display boxes to select which temperature  <br/>scale you want to use for input. See <br/> the conversion in the other box.
-  .upper
-    Farenheit
-    .data-display
-      .f-active *
-      #fahrenheit{class: 'disp'}
-        &nbsp;
-      %br
-  .lower
-    Centigrade
-    .data-display
-      .c-active *
-      #centigrade{class: 'disp'}
-        &nbsp;
-      %br
-  #keypad
-    %table
+  %table
+    %table_body
       %tr
+        %td{id:'convert_cell'}
+          %ul.which_converter
+            %li Temperature
         %td
-          = raw to_buttons(%w(1 2 3),'wide-button')
-      %tr
-        %td
-          = raw to_buttons(%w(4 5 6), 'wide-button')
-      %tr
-        %td
-          = raw to_buttons(%w(7 8 9),'wide-button')
-      %tr
-        %td
-          = raw to_buttons(%w(c 0 . -), 'narrow-button')
+          %p{id:'notes'}
+          .upper
+            %span{id:'upper_title'}
+            .data-display
+              .f-active *
+              #upper_display{class: 'disp'}
+                &nbsp;
+              %br
+          .lower
+            %span{id:'lower_title'}
+            .data-display
+              .c-active *
+              #lower_display{class: 'disp'}
+                &nbsp;
+              %br
+          #keypad
+            %table
+              %tr
+                %td
+                  = raw to_buttons(%w(1 2 3),'wide-button')
+              %tr
+                %td
+                  = raw to_buttons(%w(4 5 6), 'wide-button')
+              %tr
+                %td
+                  = raw to_buttons(%w(7 8 9),'wide-button')
+              %tr
+                %td
+                  = raw to_buttons(%w(c 0 . -), 'narrow-button')
+
+
+  %script{type: 'text/javascript'}
+    window.CONVERTER = window.CONVERTER || {}
+    s = window.CONVERTER
+    s.temperature_text = {upper_title: 'Fahrenheit', lower_title: 'Centigrade', notes: 'Click on the <i>Fahrenheit</i> or <i>Centigrade</i><br/> display boxes to select which temperature  <br/>scale you want to use for input. See <br/> the conversion in the other box.'}
+

@@ -5,7 +5,7 @@ Feature: Temperature converter
     When on the page
     Then should see initial page
 
-    When click within "#centigrade"
+    When click within "#lower_display"
     Then should see centigrade marked
 
     When enter 212 in Fahrenheit

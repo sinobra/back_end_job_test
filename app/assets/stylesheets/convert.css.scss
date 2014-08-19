@@ -32,3 +32,13 @@
   margin-bottom: 5px;
   clear: both;
 }
+td#convert_cell {
+  vertical-align: top;
+  padding-right: 20px;
+
+  ul {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+}

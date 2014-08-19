@@ -4606,3 +4606,525 @@ Started GET "/assets/convert.js?body=1" for 127.0.0.1 at 2014-08-17 21:16:27 -07
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-17 21:16:27 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 18:55:17 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (34.4ms)
+Completed 500 Internal Server Error in 95ms
+
+ActionView::Template::Error (undefined local variable or method `upper' for #<#<Class:0x0000000548fb98>:0x0000000548f148>):
+    10:           %h2{id:'title'}
+    11:           %p{id:'notes'}
+    12:           .upper
+    13:             %span{id:upper-title}
+    14:             .data-display
+    15:               .f-active *
+    16:               #fahrenheit{class: 'disp'}
+  app/views/convert/index.html.haml:13:in `_app_views_convert_index_html_haml__1048433294083368771_44170700'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 18:56:16 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (30.8ms)
+Completed 500 Internal Server Error in 35ms
+
+ActionView::Template::Error (undefined local variable or method `upper_title' for #<#<Class:0x0000000548fb98>:0x00000005090290>):
+    10:           %h2{id:'title'}
+    11:           %p{id:'notes'}
+    12:           .upper
+    13:             %span{id:upper_title}
+    14:             .data-display
+    15:               .f-active *
+    16:               #fahrenheit{class: 'disp'}
+  app/views/convert/index.html.haml:13:in `_app_views_convert_index_html_haml__1048433294083368771_42211020'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 18:56:34 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (18.5ms)
+Completed 200 OK in 591ms (Views: 590.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/convert.css?body=1" for 127.0.0.1 at 2014-08-18 18:56:35 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 18:56:35 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 18:56:35 -0700
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 18:56:35 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 18:56:35 -0700
+
+
+Started GET "/assets/convert.js?body=1" for 127.0.0.1 at 2014-08-18 18:56:35 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 18:56:35 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 18:56:35 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 18:58:34 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (15.2ms)
+Completed 200 OK in 494ms (Views: 492.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/convert.css?body=1" for 127.0.0.1 at 2014-08-18 18:58:35 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 18:58:35 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 18:58:35 -0700
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 18:58:35 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 18:58:35 -0700
+
+
+Started GET "/assets/convert.js?body=1" for 127.0.0.1 at 2014-08-18 18:58:35 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 18:58:35 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 18:58:35 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 19:00:13 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 473ms (Views: 471.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/convert.css?body=1" for 127.0.0.1 at 2014-08-18 19:00:14 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 19:00:14 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 19:00:14 -0700
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 19:00:14 -0700
+
+
+Started GET "/assets/convert.js?body=1" for 127.0.0.1 at 2014-08-18 19:00:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 19:00:14 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 19:00:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 19:00:14 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 19:00:33 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 471ms (Views: 469.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/convert.css?body=1" for 127.0.0.1 at 2014-08-18 19:00:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 19:00:33 -0700
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 19:00:33 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 19:00:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 19:00:33 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 19:00:34 -0700
+
+
+Started GET "/assets/convert.js?body=1" for 127.0.0.1 at 2014-08-18 19:00:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 19:00:34 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 19:00:52 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 519ms (Views: 517.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/convert.css?body=1" for 127.0.0.1 at 2014-08-18 19:00:53 -0700
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 19:00:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 19:00:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 19:00:53 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 19:00:53 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 19:00:53 -0700
+
+
+Started GET "/assets/convert.js?body=1" for 127.0.0.1 at 2014-08-18 19:00:53 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 19:00:53 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 19:03:28 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 61ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/convert.css?body=1" for 127.0.0.1 at 2014-08-18 19:03:28 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 19:03:28 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 19:03:28 -0700
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 19:03:28 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 19:03:28 -0700
+
+
+Started GET "/assets/convert.js?body=1" for 127.0.0.1 at 2014-08-18 19:03:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 19:03:28 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 19:03:28 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 19:06:13 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (13.1ms)
+Completed 200 OK in 521ms (Views: 519.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/convert.css?body=1" for 127.0.0.1 at 2014-08-18 19:06:14 -0700
+
+
+Started GET "/assets/convert.js?body=1" for 127.0.0.1 at 2014-08-18 19:06:14 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 19:06:14 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 19:06:14 -0700
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 19:06:14 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 19:06:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 19:06:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 19:06:14 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 19:11:46 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (13.7ms)
+Completed 200 OK in 480ms (Views: 478.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/convert.css?body=1" for 127.0.0.1 at 2014-08-18 19:11:47 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 19:11:47 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 19:11:47 -0700
+
+
+Started GET "/assets/convert.js?body=1" for 127.0.0.1 at 2014-08-18 19:11:47 -0700
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 19:11:47 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 19:11:47 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 19:11:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 19:11:47 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 19:12:16 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 478ms (Views: 476.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/convert.css?body=1" for 127.0.0.1 at 2014-08-18 19:12:17 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 19:12:17 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 19:12:17 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 19:12:17 -0700
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 19:12:17 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 19:12:17 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 19:12:17 -0700
+
+
+Started GET "/assets/convert.js?body=1" for 127.0.0.1 at 2014-08-18 19:12:17 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 19:12:22 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/convert.css?body=1" for 127.0.0.1 at 2014-08-18 19:12:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 19:12:23 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 19:12:23 -0700
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 19:12:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 19:12:23 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 19:12:23 -0700
+
+
+Started GET "/assets/convert.js?body=1" for 127.0.0.1 at 2014-08-18 19:12:23 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 19:12:23 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 19:12:40 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 478ms (Views: 477.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/convert.css?body=1" for 127.0.0.1 at 2014-08-18 19:12:40 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 19:12:41 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 19:12:41 -0700
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 19:12:41 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 19:12:41 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 19:12:41 -0700
+
+
+Started GET "/assets/convert.js?body=1" for 127.0.0.1 at 2014-08-18 19:12:41 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 19:12:41 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 20:08:43 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 470ms (Views: 468.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/convert.css?body=1" for 127.0.0.1 at 2014-08-18 20:08:44 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 20:08:44 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 20:08:44 -0700
+
+
+Started GET "/assets/convert.js?body=1" for 127.0.0.1 at 2014-08-18 20:08:44 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 20:08:44 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 20:08:44 -0700
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 20:08:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 20:08:44 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 20:12:02 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 474ms (Views: 472.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/convert.css?body=1" for 127.0.0.1 at 2014-08-18 20:12:03 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 20:12:03 -0700
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 20:12:03 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 20:12:03 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 20:12:03 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 20:12:03 -0700
+
+
+Started GET "/assets/convert.js?body=1" for 127.0.0.1 at 2014-08-18 20:12:03 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 20:12:03 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 20:18:01 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 480ms (Views: 478.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/convert.css?body=1" for 127.0.0.1 at 2014-08-18 20:18:02 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 20:18:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 20:18:02 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 20:18:02 -0700
+
+
+Started GET "/assets/convert.js?body=1" for 127.0.0.1 at 2014-08-18 20:18:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 20:18:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 20:18:02 -0700
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 20:18:02 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 20:22:25 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 470ms (Views: 468.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/convert.css?body=1" for 127.0.0.1 at 2014-08-18 20:22:26 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 20:22:26 -0700
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 20:22:26 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 20:22:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 20:22:26 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 20:22:26 -0700
+
+
+Started GET "/assets/convert.js?body=1" for 127.0.0.1 at 2014-08-18 20:22:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 20:22:26 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-18 20:23:29 -0700
+Processing by ConvertController#index as HTML
+  Rendered convert/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 481ms (Views: 479.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/convert.css?body=1" for 127.0.0.1 at 2014-08-18 20:23:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-18 20:23:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-18 20:23:30 -0700
+
+
+Started GET "/assets/convert.js?body=1" for 127.0.0.1 at 2014-08-18 20:23:30 -0700
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 20:23:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-18 20:23:30 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-18 20:23:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-18 20:23:30 -0700
