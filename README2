@@ -1,0 +1,30 @@
+The logic for the rewriting of Roman Numerals is divided into a Scanner class which reads the numerals 1 by 1, and
+assembles them into tokens, (which deal with 2-numeral numbers like 'IV', 'IX', 'XL', 'XC', 'CD', and 'CM').
+
+Arbitrary sequences of the same numeral are allowed, for example 'IIIIIIIIII' is 10, but only if the repeating numeral
+is NOT a subtractive indicator (I, X, C) or, if it is a subtractive indicator, then the sequence does not precede a
+legal subtractive suffix.  For example:
+
+'IIV' is illegal
+'IIIX' is illegal
+'XXL'  is illegal
+'XXXXXC' is illegal
+'CCCD' is also illegal, as is 'CCM'
+
+Each numeral must precede a numeral of the same or lesser value, unless it is one of the subtractive numerals, but they
+are limited to preceding their legal subtractive suffix. The rspec tests of the scanner should illustrate more fully the
+rules.
+
+The rewriting logic is located in the Rewriter class.  It's logic is pretty simple.  It reads each token from the
+scanner, and add's it's value to a running integer total.
+
+Then it divides the integer total by a decreasing sequence of integer factors and assembles an output string based
+on the factor and the result of the integer division.
+
+ There are checks in logic to raise an exception if the computed string is longer than the input string.
+
+ There is a command line program, rn.rb, to allow you to type in Roman numerals and see the 'optimized' translation.
+
+
+
+
